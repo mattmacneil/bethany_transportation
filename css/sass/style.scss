@@ -1,0 +1,362 @@
+@import "assets";
+@import "vars";
+@import "mixins";
+@import "nav";
+@import "development";
+
+@media screen and (max-width: 1175px){
+
+	.no-display-1175{
+		display: none;
+	}
+
+	#hero{
+		background-position: center center;
+	}
+
+	.hero-overlay-tagline{
+		width: 75%;
+	}
+
+	.hero-cta-cell{
+		width: 25%;
+	}
+
+	.hero-cta-button{
+		width: 40%;
+	}
+
+	.landing-introduction-cta{
+		width: 40%;
+		margin-left: 30%;
+	}
+
+	#fleet-page{
+		.fleet-large-left{
+			width: 100%;
+
+			img{
+				width: 60%;
+				margin-left: 20%;
+				margin-bottom: 25px;
+			}
+		}
+
+		.fleet-large-right{
+			width: 100%;
+		}
+
+		.fleet-large-pax-container{
+			width: 80%;
+			margin-left: 10%;
+		}
+
+		.fleet-large-book-button{
+			width: 100%;
+			margin-left: 0;
+		}
+
+		.fleet-large-bottom-morepics-container{
+			width: 80%;
+			margin-left: 0;
+		}
+
+		.fleet-small-pax-container,
+		.fleet-small-book-button{
+			width: 80%;
+			margin-left: 10%;
+		}
+	}
+
+	#contact-page{
+		.contact-left{
+			width: 45%;
+			font-size: .9em;
+		}
+
+		.contact-right{
+			width: 55%;
+			padding: 50px 25px;
+		}
+
+		#map-canvas{
+			width: 55%;
+		}
+	}
+
+}
+
+@media screen and (max-width: 800px){
+
+	.no-display-800{
+		display: none;
+	}
+
+	#hero{
+		height: 600px;
+		max-height: none;
+	}
+
+	.hero-underlay{
+		border: 4px solid $white;
+	}
+
+	.hero-overlay-relative{
+		padding-top: 50px;
+	}
+
+	.hero-overlay-tagline{
+		h1{
+			font-size: 2em;
+		}
+	}
+
+	.landing-introduction-cell{
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 50px;
+	}
+
+	.landing-introduction-cta{
+		width: 80%;
+		margin-left: 10%;
+		margin-top: -50px;
+	}
+
+	.landing-history-content{
+		width: 100%;
+	}
+
+	.landing-history-content-outline{
+		padding: 50px 25px;
+	}
+
+	#landing-services{
+		background-size: auto 100px;
+		background-position: 2% 25px;
+		padding-top: 150px;
+	}
+
+	.landing-services-intro{
+		width: 100%;
+	}
+
+	.landing-services-cell-large,
+	.landing-services-cell-small{
+		height: 200px;
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.landing-services-snipe-button{
+		display: inline;
+	}
+
+	.landing-services-snipe-title-large{
+		top: 15px;
+		bottom: auto;
+	}
+
+	.landing-services-snipe-button-large{
+		top: 15px;
+		bottom: auto;
+	}
+
+	.landing-services-button-services,
+	.landing-services-button-booking{
+		width: 100%;
+	}
+
+	.landing-services-button-services{
+		margin-bottom: 10px;
+	}
+
+	#services-page{
+		padding-bottom: 0;
+
+		.services-container{
+			margin-bottom: 0;
+		}
+
+		.services-container-left,
+		.services-container-right{
+			width: 100%;
+			margin-bottom: 75px;
+		}
+	}
+
+	#fleet-page{
+		.fleet-small-container{
+			width: 100%;
+		}
+
+		.fleet-small-hero{
+			margin-top: 0;
+		}
+
+		.fleet-small-pax-container,
+		.fleet-small-book-button{
+			width: 90%;
+			margin-left: 5%;
+		}
+	}
+
+	#coaches-page{
+
+		.coach-cell{
+			width: 100%;
+			margin-left: 0;
+			margin-bottom: 50px;
+		}
+
+		.coach-cell-pax{
+			width: 80%;
+			margin-left: 10%;
+		}
+
+		.coach-info-left{
+			width: 100%;
+			margin-bottom: 50px;
+		}
+
+		.coach-info-right{
+			width: 100%;
+		}
+
+		.coach-booking-button{
+			width: 80%;
+			margin-left: 10%;
+		}
+	}
+
+	#contact-page{
+		.contact-left{
+			width: 100%;
+			font-size: 1em;
+		}
+
+		.contact-right{
+			width: 100%;
+			padding: 50px 25px;
+		}
+
+		#map-canvas{
+			width: 100%;
+		}
+	}
+
+	footer{
+		padding-bottom: 0;
+
+		.footer-cell{
+			width: 45%;
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+
+		.footer-tablet-cell-left{
+			margin-left: 0;
+			margin-bottom: 50px;
+		}
+
+		.footer-tablet-cell-right{
+			float: right;
+			margin-left: 0;
+			margin-bottom: 50px;
+		}
+	}
+
+	.grave{
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 525px){
+
+	.no-display-525{
+		display: none;
+	}
+
+	#hero{
+		height: 450px;
+		background-image: url('../../images/hero-mobile.jpg');
+	}
+
+	.hero-overlay-relative{
+		background-color: rgba($black, .5);
+	}
+
+	.hero-overlay-tagline{
+		width: 90%;
+		margin-right: 5%;
+		text-align: center;
+
+		h1{
+			font-size: 1.75em;
+			color: $white;
+			@include haze($black);
+		}
+	}
+
+	.hero-overlay-relative{
+		padding-top: 100px;
+	}
+
+	.hero-cta-button{
+		width: 90%;
+	}
+
+	.landing-introduction-cta{
+		width: 100%;
+		margin-left: 0;
+		margin-top: -50px;
+	}
+
+	#landing-services{
+		background-position: center 25px;
+	}
+
+	#fleet-page{
+
+		.fleet-large-left{
+
+			img{
+				width: 100%;
+				margin-left: 0;
+			}
+		}
+
+		.fleet-large-bottom-morepics-container{
+			display: none;
+		}
+
+		.fleet-large-pax-container{
+			width: 90%;
+			margin-left: 5%;
+		}
+
+		.fleet-large-bottom-left{
+			display: none;
+		}
+
+		.fleet-large-bottom-right{
+			width: 100%;
+			margin-left: 0;
+		}
+
+		.fleet-large-book-button{
+			width: 90%;
+			margin-left: 5%;
+		}
+	}
+
+	footer{
+		.footer-cell{
+			width: 100%;
+		}
+	}
+
+	#map-canvas{
+		height: 125px;
+	}
+}
